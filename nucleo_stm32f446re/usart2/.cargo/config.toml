@@ -1,0 +1,6 @@
+[build]
+target = "thumbv7em-none-eabihf"
+rustflags = ["-C", "link-arg=-Tlink.x"] 
+
+[target.thumbv7em-none-eabihf]
+runner = "probe-rs run --chip STM32F446RE"
