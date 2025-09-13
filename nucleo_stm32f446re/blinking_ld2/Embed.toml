@@ -1,0 +1,14 @@
+[default.general]
+chip = "stm32f446RE"
+
+[default.probe]
+protocol = "Swd"
+
+[default.rtt]
+enabled = true
+
+[default.gdb]
+enabled = true
+
+[default.reset]
+halt_afterwards = true

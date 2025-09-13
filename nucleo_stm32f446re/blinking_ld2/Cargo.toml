@@ -1,0 +1,23 @@
+[package]
+name = "rust_embedded_example"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+cortex-m = "0.7"
+cortex-m-rt = "0.7"
+panic-halt = "1.0.0"
+nb = "1"
+ 
+[dependencies.embedded-hal]
+version = "1.0.0"
+ 
+[dependencies.stm32f4xx-hal]
+version = "0.22.1"
+features = ["rtic1", "stm32f446"]
+
+[profile.dev]
+debug = true
+
+[profile.release]
+lto = true
